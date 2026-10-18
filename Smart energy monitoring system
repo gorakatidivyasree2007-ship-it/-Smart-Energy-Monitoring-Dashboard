@@ -1,0 +1,13 @@
+<h2>Energy Monitor</h2>
+<p>Voltage: <span id="v">230</span> V</p>
+<p>Current: <span id="i">2</span> A</p>
+<p>Power: <span id="p">460</span> W</p>
+
+<script>
+  function update(v, i) {
+    document.getElementById("v").textContent = v;
+    document.getElementById("i").textContent = i;
+    document.getElementById("p").textContent = (v * i).toFixed(1);
+  }
+  update(230, 2);
+</script>
